@@ -1,16 +1,38 @@
-a{
+/*a{
   position: relative;
   padding-left: 33px;
   /*указываем отступ равный ширине иконки*/
-}
-a:before{
+/*}
+a:before{*/
   /*если размер картинки неизвестен*/
-  content: '';
+  /*content: '';
   position: absolute;
   left: 0;
   background: url(envelope.svg) center center no-repeat;
   background-size: contain;
   height: 16px;
-  width: 33px;
+  width: 33px;*/
   /*content: url(http://placekitten.com/50/50);*/
+/*}*/
+body{
+  font-size: 10px;
+}
+ul li{
+  margin-bottom: 5px;
+  height: 10px;
+}
+a{
+  position: relative;
+  padding-left: 15px;
+  height: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+a:before{
+  position: absolute;
+  left: 0;
+  content: '';
+  background: red;
+  height: 10px;
+  width: 10px;
 }
