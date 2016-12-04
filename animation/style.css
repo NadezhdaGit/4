@@ -1,0 +1,25 @@
+p{
+  animation-duration: 4s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+  /*animation: slidein 4s forwards;*/
+  animation-timing-function: cubic-bezier(0.21, 1.68, 0.88,-0.68); /*замедление в начале и в конце*/
+}
+
+@keyframes slidein {
+  0%{
+    margin-left: 0%;
+    width: 100%;
+    background: #adadad;
+  }
+  20%{
+    margin-left: 110%;
+    width: 300%;
+    background: #ffdead;
+  }
+  100%{
+    margin-left: 0%;
+    width: 100%;
+    background: #deadff;
+  }
+}
