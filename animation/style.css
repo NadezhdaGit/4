@@ -1,25 +1,51 @@
 p{
-  animation-duration: 4s;
+  /*animation-duration: 4s;
   animation-name: slidein;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
   /*animation: slidein 4s forwards;*/
-  animation-timing-function: cubic-bezier(0.21, 1.68, 0.88,-0.68); /*замедление в начале и в конце*/
+  /*animation-timing-function: cubic-bezier(0.21, 1.68, 0.88,-0.68); /*замедление в начале и в конце*/*/
 }
 
+.animation{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation: slidein 4s forwards;
+}
 @keyframes slidein {
   0%{
-    margin-left: 0%;
-    width: 100%;
-    background: #adadad;
+    left: 0;
+    top: 0;
+    background: purple;
   }
-  20%{
-    margin-left: 110%;
-    width: 300%;
-    background: #ffdead;
+  50%{
+    left:90%;
+    top:0;
+    background: white;
   }
   100%{
-    margin-left: 0%;
-    width: 100%;
-    background: #deadff;
+    left:90%;
+    top:90%;
+    background: blue;
   }
+}
+  .polet{
+    position: absolute;
+    animation: polet 4s forwards;
+    /*animation-timing-function: cubic-bezier(0.21, 1.68, 0.88,-0.68);*/
+
+  }
+  @keyframes polet {
+    0%{
+      left: 0;
+      top: 0;
+    }
+    50%{
+      left:0;
+      top:85%;
+    }
+    100%{
+      left:90%;
+      top:85%;
+    }
 }
